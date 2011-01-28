@@ -1,12 +1,12 @@
 <?
 class MoviePlotGenerator {
-	public static $adjectives = array('sadistic',
+	public static $adjectives = array('test1', 'sadistic',
 									  'diminuitive',
 									  'fat',
 									  'determined',
 									  'grisly');
 						
-	public static $occupations = array('movie-critic',
+	public static $occupations = array('test2', 'movie-critic',
 									   'goat wrangler',
 									   'entrepreneur',
 									   'construction worker',
@@ -16,7 +16,7 @@ class MoviePlotGenerator {
 									   'baker',
 									   'swimsuit model');
 						 
-	public static $quirks = array('penchant for melodrama',
+	public static $quirks = array('test3', 'penchant for melodrama',
 								  'murky past',
 								  'love for puppies',
 								  'taste for blood',
@@ -57,7 +57,7 @@ class MoviePlotGenerator {
 	 */	
 	protected function getRandom($arr)
 	{
-		return $arr[rand(0, count($arr) - 1)];
+		return $arr[mt_rand(0, count($arr) - 1)];
 	}
 		
 }
